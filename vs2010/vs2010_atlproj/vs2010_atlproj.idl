@@ -1,0 +1,18 @@
+// vs2010_atlproj.idl : IDL source for vs2010_atlproj
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (vs2010_atlproj.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	uuid(A63A2437-7C51-49C7-BF2D-6A579019C4A8),
+	version(1.0),
+]
+library vs2010_atlprojLib
+{
+	importlib("stdole2.tlb");
+};
+

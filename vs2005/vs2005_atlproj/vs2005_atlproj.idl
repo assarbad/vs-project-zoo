@@ -1,0 +1,18 @@
+// vs2005_atlproj.idl : IDL source for vs2005_atlproj
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (vs2005_atlproj.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	uuid(33296527-E1EF-485F-A162-F7A765F0381C),
+	version(1.0),
+	helpstring("vs2005_atlproj 1.0 Type Library")
+]
+library vs2005_atlprojLib
+{
+	importlib("stdole2.tlb");
+};

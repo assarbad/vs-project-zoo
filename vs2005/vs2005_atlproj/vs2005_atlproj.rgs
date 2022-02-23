@@ -1,0 +1,11 @@
+HKCR
+{
+	NoRemove AppID
+	{
+		'%APPID%' = s 'vs2005_atlproj'
+		'vs2005_atlproj.EXE'
+		{
+			val AppID = s '%APPID%'
+		}
+	}
+}

@@ -1,0 +1,18 @@
+// vs2012_atlproj.idl : IDL source for vs2012_atlproj
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (vs2012_atlproj.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	uuid(D1AE209F-569E-45A2-B48C-37686502A6C5),
+	version(1.0),
+]
+library vs2012_atlprojLib
+{
+	importlib("stdole2.tlb");
+};
+

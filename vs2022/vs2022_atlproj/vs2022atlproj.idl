@@ -1,0 +1,18 @@
+// vs2022_atlproj.idl : IDL source for vs2022_atlproj
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (vs2022atlproj.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	uuid(3e60daf3-efe0-4e97-8c1f-00f191934533),
+	version(1.0),
+]
+library vs2022atlprojLib
+{
+	importlib("stdole2.tlb");
+};
+

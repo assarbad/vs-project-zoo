@@ -1,0 +1,18 @@
+// vs2019_atlproj.idl : IDL source for vs2019_atlproj
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (vs2019atlproj.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	uuid(5d7bcd25-04aa-4346-acee-3a4089c3c497),
+	version(1.0),
+]
+library vs2019atlprojLib
+{
+	importlib("stdole2.tlb");
+};
+
