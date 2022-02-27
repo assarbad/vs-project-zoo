@@ -14,6 +14,8 @@ As far as I am aware VS 2010 is the first version in which the C/C++ projects --
 
 ## Visual Studio 2005
 
+Adds `x64` as platform value, supporting `Win32` (x86-32) and `x64` (x86-64).
+
 ### Solution (`.sln`) file
 
 UTF-8, BOM, CRLF
@@ -57,6 +59,8 @@ Windows 1252 (etc.), CRLF
 ```
 
 ## Visual Studio 2008
+
+Supports: `Win32` (x86-32) and `x64` (x86-64).
 
 ### Solution (`.sln`) file
 
@@ -103,6 +107,8 @@ Windows 1252 (etc.), CRLF
 
 ## Visual Studio 2010
 
+Supports: `Win32` (x86-32) and `x64` (x86-64).
+
 ### Solution (`.sln`) file
 
 ```
@@ -122,6 +128,8 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 
 ## Visual Studio 2012
 
+Adds `ARM` as platform value, supporting `ARM` (32-bit ARM), `Win32` (x86-32) and `x64` (x86-64).
+
 ### Solution (`.sln`) file
 
 ```
@@ -139,6 +147,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 ```
 
 ### Solution (`.sln`) file
+
+Supports: `ARM` (32-bit ARM), `Win32` (x86-32) and `x64`  (x86-64).
 
 ## Visual Studio 2013
 
@@ -160,6 +170,8 @@ MinimumVisualStudioVersion = 10.0.40219.1
 
 ## Visual Studio 2015
 
+Adds `Itanium` as platform value, supporting `ARM` (32-bit ARM), `Itanium`, `Win32` (x86-32) and `x64` (x86-64).
+
 ### Solution (`.sln`) file
 
 ```
@@ -179,6 +191,8 @@ MinimumVisualStudioVersion = 10.0.40219.1
 ```
 
 ## Visual Studio 2017
+
+Adds `ARM64` as platform value, supporting `ARM` (32-bit ARM), `ARM64` (64-bit ARM), `Itanium`, `Win32` (x86-32) and `x64` (x86-64).
 
 ### Solution (`.sln`) file
 
@@ -200,6 +214,8 @@ MinimumVisualStudioVersion = 10.0.40219.1
 
 ## Visual Studio 2019
 
+Supports: `ARM` (32-bit ARM), `ARM64` (64-bit ARM), `Itanium`, `Win32` (x86-32) and `x64` (x86-64).
+
 ### Solution (`.sln`) file
 
 ```
@@ -219,6 +235,8 @@ MinimumVisualStudioVersion = 10.0.40219.1
 ```
 
 ## Visual Studio 2022
+
+Supports: `ARM` (32-bit ARM), `ARM64` (64-bit ARM), `Itanium`, `Win32` (x86-32) and `x64` (x86-64).
 
 ### Solution (`.sln`) file
 
