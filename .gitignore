@@ -1,3 +1,4 @@
 .vs/
 *.*proj.user
 *.bak
+obj/
