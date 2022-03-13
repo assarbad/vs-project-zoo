@@ -4,38 +4,6 @@ This repo contains a zoo of projects and solutions that I created in order to ha
 
 My need for these files arises from work on `premake4`.
 
-# Future research
-
-Aside from the DLLs which are evidently used in conjunction with Visual Studio and MSBuild -- MSBuild itself is meanwhile open-source -- there are a number of files of interest which can be used to deduce a lot of information regarding the defaults used for projects.
-
-* `%Program Files(x86)%\MSBuild\Microsoft.Cpp\v4.0`
-  * **NB:** I think this is the "root location" for the original MSBuild-based `.vcxproj` versions. This particular item seems to be identical to VS2010.
-  * **Also note:** the `.props` and `.targets` files in this folder and the respective `v110`, `v120`, `v140` subfolders _appear_ to correspond to the defaults used during project generation.
-  * `.\1033` (locale ID for US-English in decimal)
-    * `cl.xml` (for the compiler), `link.xml` (for the linker), etc.
-  * `.\V110\1033` (v110 == VS2012)
-    * `cl.xml` (for the compiler), `link.xml` (for the linker), etc.
-  * `.\V120\1033` (v110 == VS2013)
-    * `cl.xml` (for the compiler), `link.xml` (for the linker), etc.
-  * `.\V140\1033` (v110 == VS2015)
-    * `cl.xml` (for the compiler), `link.xml` (for the linker), etc.
-* `%Program Files(x86)%\Microsoft Visual Studio\2017\$Edition` (`$Edition` == `{Community,Professional,Enterprise}`)
-  * `.\Common7\IDE\VC\VCTargets\1033` (locale ID for US-English in decimal)
-    * `cl.xml` (for the compiler), `link.xml` (for the linker), etc.
-* `%Program Files(x86)%\Microsoft Visual Studio\2019\$Edition` (`$Edition` == `{Community,Professional,Enterprise}`)
-  * `.\MSBuild\Microsoft\VC\v160\1033` (locale ID for US-English in decimal, `v160` == VS2019)
-    * `cl.xml` (for the compiler), `link.xml` (for the linker), etc.
-* `%Program Files%\Microsoft Visual Studio\2022\$Edition` (`$Edition` == `{Community,Professional,Enterprise}`)
-  * **NB:** Apparently the below structure facilitates using the older toolset choices from within VS2022.
-  * `.\MSBuild\Microsoft\VC\v150\1033` (`v150` == VS2017)
-    * `cl.xml` (for the compiler), `link.xml` (for the linker), etc.
-  * `.\MSBuild\Microsoft\VC\v160\1033` (`v160` == VS2019)
-    * `cl.xml` (for the compiler), `link.xml` (for the linker), etc.
-  * `.\MSBuild\Microsoft\VC\v170\1033` (`v170` == VS2022)
-    * `cl.xml` (for the compiler), `link.xml` (for the linker), etc.
-
-NB: this assumes a 64-bit (x86-64 to be precise) system, otherwise you may have to alter the above locations to match your actual setup.
-
 # Summary
 
 Solution files (`.sln`) start with a UTF-8 BOM and then use Windows line endings (CRLF) throughout.
@@ -295,3 +263,35 @@ MinimumVisualStudioVersion = 10.0.40219.1
 ```
 
 Continues to carry `<WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>` right after `<RootNamespace>...</RootNamespace>` in the project file.
+
+# Future research
+
+Aside from the DLLs which are evidently used in conjunction with Visual Studio and MSBuild -- MSBuild itself is meanwhile open-source -- there are a number of files of interest which can be used to deduce a lot of information regarding the defaults used for projects.
+
+* `%Program Files(x86)%\MSBuild\Microsoft.Cpp\v4.0`
+  * **NB:** I think this is the "root location" for the original MSBuild-based `.vcxproj` versions. This particular item seems to be identical to VS2010.
+  * **Also note:** the `.props` and `.targets` files in this folder and the respective `v110`, `v120`, `v140` subfolders _appear_ to correspond to the defaults used during project generation.
+  * `.\1033` (locale ID for US-English in decimal)
+    * `cl.xml` (for the compiler), `link.xml` (for the linker), etc.
+  * `.\V110\1033` (v110 == VS2012)
+    * `cl.xml` (for the compiler), `link.xml` (for the linker), etc.
+  * `.\V120\1033` (v110 == VS2013)
+    * `cl.xml` (for the compiler), `link.xml` (for the linker), etc.
+  * `.\V140\1033` (v110 == VS2015)
+    * `cl.xml` (for the compiler), `link.xml` (for the linker), etc.
+* `%Program Files(x86)%\Microsoft Visual Studio\2017\$Edition` (`$Edition` == `{Community,Professional,Enterprise}`)
+  * `.\Common7\IDE\VC\VCTargets\1033` (locale ID for US-English in decimal)
+    * `cl.xml` (for the compiler), `link.xml` (for the linker), etc.
+* `%Program Files(x86)%\Microsoft Visual Studio\2019\$Edition` (`$Edition` == `{Community,Professional,Enterprise}`)
+  * `.\MSBuild\Microsoft\VC\v160\1033` (locale ID for US-English in decimal, `v160` == VS2019)
+    * `cl.xml` (for the compiler), `link.xml` (for the linker), etc.
+* `%Program Files%\Microsoft Visual Studio\2022\$Edition` (`$Edition` == `{Community,Professional,Enterprise}`)
+  * **NB:** Apparently the below structure facilitates using the older toolset choices from within VS2022.
+  * `.\MSBuild\Microsoft\VC\v150\1033` (`v150` == VS2017)
+    * `cl.xml` (for the compiler), `link.xml` (for the linker), etc.
+  * `.\MSBuild\Microsoft\VC\v160\1033` (`v160` == VS2019)
+    * `cl.xml` (for the compiler), `link.xml` (for the linker), etc.
+  * `.\MSBuild\Microsoft\VC\v170\1033` (`v170` == VS2022)
+    * `cl.xml` (for the compiler), `link.xml` (for the linker), etc.
+
+NB: this assumes a 64-bit (x86-64 to be precise) system, otherwise you may have to alter the above locations to match your actual setup.
